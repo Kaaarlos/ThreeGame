@@ -2,13 +2,19 @@
   "name": "proyecto-final",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
+    "@react-three/cannon": "2.5.0",
+    "@react-three/drei": "9.34.4",
+    "@react-three/fiber": "8.8.10",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "three": "0.145.0",
+    "three-to-cannon": "^4.3.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
