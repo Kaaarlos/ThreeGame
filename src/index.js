@@ -5,6 +5,7 @@ import {Canvas} from '@react-three/fiber';
 import {Scene} from './Scene';
 import { Physics } from '@react-three/cannon';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Canvas>
