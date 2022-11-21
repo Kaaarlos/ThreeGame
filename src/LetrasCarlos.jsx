@@ -1,18 +1,16 @@
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import React, { useEffect, useState } from "react";
-import { useFrame, useLoader } from "@react-three/fiber";
-import { useBox, useRaycastVehicle } from "@react-three/cannon";
-const paletteIndex = 8;
+import { useLoader } from "@react-three/fiber";
+import { useBox } from "@react-three/cannon";
 
 export const LetrasCarlos = (props) => {
     const [color, setColor] = useState("white");
 
     const [letras, api] = useBox(() => ({
-        mass: 5,
-        args: [0.04, 0.04, 0.04],
-        position: [-2, -0.1, -1],
+        mass: .5,
+        args: [4, .25, 1],
         material: {
-            friction: 1,
+            friction: .5,
             restitution: 0
         },
         ...props
@@ -22,13 +20,10 @@ export const LetrasCarlos = (props) => {
         GLTFLoader,
         process.env.PUBLIC_URL + "/models/carlos2.glb"
     ).scene;
-    
 
     return(
-        <mesh ref={letras} receiveShadow={true} layers={props.layers} scale={[.02, .02, .02]}>
+        <mesh castShadow receiveShadow ref={letras} layers={props.layers} scale={[1,1,1]}>
             <primitive object={mesh}/>
-            <planeBufferGeometry />
-            <meshPhongMaterial  />
         </mesh>
     );
 }
