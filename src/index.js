@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import {Canvas} from '@react-three/fiber';
 import {Scene} from './Scene';
 import { Physics } from '@react-three/cannon';
+import './App.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

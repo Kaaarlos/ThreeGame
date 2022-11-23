@@ -13,7 +13,7 @@ export function Car({ thirdPerson }) {
     process.env.PUBLIC_URL + "/models/car.glb"
   ).scene;
 
-  const position = [-1.5, 0.5, 3];
+  const position = [0, 0.5, 3];
   const width = 0.15;
   const height = 0.07;
   const front = 0.15;

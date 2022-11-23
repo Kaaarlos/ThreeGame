@@ -9,6 +9,7 @@ export const Cube = (props) => {
     const [cube, api] = useBox(() => ({
         mass: 1,
         args: [.4, .4, .4],
+        position: [-1,.5,2],
         material: {
             friction: .5,
             restitution: 0
@@ -25,5 +26,6 @@ export const Cube = (props) => {
         <mesh castShadow receiveShadow ref={cube} layers={props.layers} scale={[.2,.2,.2]}>
             <primitive object={mesh}/>
         </mesh>
+
     );
 };

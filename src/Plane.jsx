@@ -11,19 +11,13 @@ export const Plane2 = () => {
       friction: 0.1
     }
   }));
-
+  
   return (
     <>
     <mesh  receiveShadow ref={ref} scale={[1000, 1000, 1000]}>
       <planeBufferGeometry  receiveShadow />
-      <meshPhongMaterial receiveShadow shininess={10} color={"#52133E"} />
-
-        {/* <Html transform >
-          <h1>Hola</h1>
-        </Html> */}
+      <meshPhongMaterial receiveShadow shininess={10} color={"#500937"} />
     </mesh>
-      <Html></Html>
-
    </>
   );
 };
