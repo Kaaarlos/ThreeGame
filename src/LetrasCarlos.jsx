@@ -4,9 +4,8 @@ import { useLoader } from "@react-three/fiber";
 import { useBox } from "@react-three/cannon";
 
 export const LetrasCarlos = (props) => {
-    const [color, setColor] = useState("white");
 
-    const [letras, api] = useBox(() => ({
+    const [letras] = useBox(() => ({
         mass: .5,
         args: [4, .25, 1],
         material: {
@@ -22,7 +21,7 @@ export const LetrasCarlos = (props) => {
     ).scene;
 
     return(
-        <mesh castShadow receiveShadow ref={letras} layers={props.layers} scale={[1,1,1]}>
+        <mesh  shadows="true" castShadow receiveShadow position={[-0.09, 9.65, 7]} ref={letras} layers={props.layers} scale={[1,1,1]}>
             <primitive object={mesh}/>
         </mesh>
     );

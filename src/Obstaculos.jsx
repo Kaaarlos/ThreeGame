@@ -7,7 +7,7 @@ export const Obstaculos = (props) => {
     const [color, setColor] = useState("white");
     const [cubeRef, api] = useBox(() => ({
         mass: 1,
-        args: [0.5, 0.5, 0.5],
+        args: [0.5, 15, 0.5],
         material: {
         friction: .5,
         restitution: 0

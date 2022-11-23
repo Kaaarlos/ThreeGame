@@ -11,7 +11,8 @@ import { Plane2 } from "./Plane";
 import { LetrasCarlos } from "./LetrasCarlos";
 import { Cube } from "./Cube";
 import { Pizarras } from "./Pizarras";
-
+import { BarrasLen } from "./BarrasLen";
+import { BarrasLenFrame } from "./BarrasLenFrame";
 
 export function Scene(){
 
@@ -55,11 +56,12 @@ export function Scene(){
             )}
             
             <Plane2/>
-            <Obstaculos position={[1,.5,2]} />
+            <Obstaculos position={[2,.5,-1]} />
             <LetrasCarlos position={[-.5,.5,0]}/>
             <Cube/>
             <Pizarras position={[0,0,-4]} scale={[0.08,0.08,0.08]}/>
-            {/* <Screen position= {[0, .54,0]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.1,0.1,0.1]}/> */}
+            <BarrasLen  rotation={[0,17.2,0]}   position={[3,.5,2]}  scale={[0.08,0.08,0.08]}/> 
+            <BarrasLenFrame  rotation={[0,17.2,0]}   position={[-5,.5,2]}  scale={[0.08,0.08,0.08]}/> 
             <Car thirdPerson={thirdPerson}/>
         </Suspense>
     )
