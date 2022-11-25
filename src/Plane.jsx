@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { usePlane } from "@react-three/cannon";
-import { Plane ,MeshReflectorMaterial,Html } from "@react-three/drei";
 
 
 export const Plane2 = () => {

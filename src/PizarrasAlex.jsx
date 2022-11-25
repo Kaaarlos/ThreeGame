@@ -8,13 +8,14 @@ import { Html } from "@react-three/drei";
 import { Carlos } from "./Carlos";
 
 //fotos Carlos
-import img1 from "./Img/calculadora.png";
-import img2 from "./Img/EditMe.png";
-import img3 from "./Img/cripto.png";
-import img4 from "./Img/Gato.png";
+import img1 from "./Img/GaleriaArteMariana.png";
+import img2 from "./Img/juegoMariana.png";
+import img3 from "./Img/listaTareasMariana.png";
+import img4 from "./Img/gatoGame.png";
 
 
-export function Pizarras(props) {
+
+export function PizarrasAlex(props) {
   const { nodes, materials } = useGLTF("/Models/pizarras.glb");
   return (
     <group {...props} dispose={null}>

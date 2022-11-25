@@ -21,8 +21,8 @@ export function BarrasLenFrame(props) {
   const { nodes, materials } = useGLTF("/Models/barrasLenFrame.glb");
 
   return (
-    <group ref={letras}  {...props} dispose={null}>
-      <group  position={[-4,.5,-23]}>
+    <group position={[-4,.5,-23]} ref={letras}  {...props} dispose={null}>
+      <group  >
         <mesh
           castShadow
           receiveShadow
@@ -53,21 +53,21 @@ export function BarrasLenFrame(props) {
         receiveShadow
         geometry={nodes.Text004.geometry}
         material={materials.Letras}
-        position={[6.34, 0.28, -22.53]}
+        position={[6.34, 0.28, -22.53+22]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Text005.geometry}
         material={materials.Letras}
-        position={[4.14, -5, -15.28]}
+        position={[4.14, -5, -15.28+22]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Text006.geometry}
         material={materials.Letras}
-        position={[4.12, -5, -28.36]}
+        position={[4.12, -5, -28.36+22]}
       />
     </group>
   );
