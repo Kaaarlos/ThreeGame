@@ -16,7 +16,7 @@ export function MarLen(props) {
 
   const { nodes, materials } = useGLTF("/Models/MarLen.glb");
   return (
-    <group {...props} dispose={null}>
+    <group ref={letras} {...props} dispose={null}>
       <group position={[-0.01, 0.46, -0.04]} scale={[0.7, 0.5, 1]}>
         <mesh
           castShadow

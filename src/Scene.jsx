@@ -25,6 +25,10 @@ import { MarLen } from "./MarLen";
 import { AlexLen } from "./AlexLen";
 import { CarLen } from "./CarLen";
 import { CarFrame } from "./CarFrame";
+import { Banderas } from "./Banderas";
+import { TeclasMov } from "./TeclasMov";
+import { TeclasC } from "./TeclasC";
+import { TeclaR } from "./TeclaR";
 
 export function Scene(){
 
@@ -87,7 +91,10 @@ export function Scene(){
             <CarLen position={[3.4,0.1,2]}  scale={[.2,.2,.2]}/>
             <CarFrame position={[-3.4,0.1,2]}  scale={[.2,.2,.2]}/>
             <Car thirdPerson={thirdPerson}/>
-
+            <Banderas position={[0,0.1,-6]}  scale={[.5,.5,.5]}/>
+            <TeclasMov position={[-1,.5,4]}  scale={[.2,.2,.2]}/>
+            <TeclasC position={[0.5,.5,4.1]}  scale={[.2,.2,.2]}/>
+            <TeclaR position={[0.5,.5,3.2]}  scale={[.2,.2,.2]}/>
 
             {/*Objetos Mariana*/}
             <MarianaLetras position={[10,0,-2]} scale={[1,1,1]}/>
@@ -101,7 +108,7 @@ export function Scene(){
             <PizarrasAlex position={[-10,0,-4]} scale={[0.08,0.08,0.08]}/>
             <CartelesAlex position={[-10,0,-4]} scale={[0.08,0.08,0.08]}/>
             <AlexFrame position={[-13,0.1,2]}  scale={[.2,.2,.2]}/> 
-            <AlexLen position={[-6,0.1,2]}  scale={[.2,.2,.2]}/> 
+            <AlexLen position={[-6,0.1,2]}  scale={[.2,.2,.2]}/>
         </Suspense>      
         </>
 

@@ -10,12 +10,12 @@ import { WheelDebug } from "./WheelDebug";
 export function Car({ thirdPerson }) {
   let result = useLoader(
     GLTFLoader,
-    process.env.PUBLIC_URL + "/models/car.glb"
+    process.env.PUBLIC_URL + "/models/carro1.glb"
   ).scene;
 
   const position = [0, 0.5, 3];
   const width = 0.15;
-  const height = 0.07;
+  const height = 0.09;
   const front = 0.15;
   const wheelRadius = 0.05;
 
