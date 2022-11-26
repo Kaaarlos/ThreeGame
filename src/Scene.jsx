@@ -12,14 +12,19 @@ import { LetrasCar } from "./LetrasCar";
 import { Cube } from "./Cube";
 import { Pizarras } from "./Pizarras";
 import { PizarrasMa } from "./PizarrasMa";
-import { BarrasLen } from "./BarrasLen";
-import { BarrasLenFrame } from "./BarrasLenFrame";
+
 import { Carteles } from "./Carteles";
 import { CartelesMariana } from "./CartelesMariana";
 import { MarianaLetras } from "./MarianaLetras";
 import { AlexLetras } from "./AlexLetras";
 import { PizarrasAlex } from "./PizarrasAlex";
 import { CartelesAlex } from "./CartelesAlex";
+import { AlexFrame } from "./AlexFrame";
+import { MarFrame } from "./MarFrame";
+import { MarLen } from "./MarLen";
+import { AlexLen } from "./AlexLen";
+import { CarLen } from "./CarLen";
+import { CarFrame } from "./CarFrame";
 
 export function Scene(){
 
@@ -78,20 +83,25 @@ export function Scene(){
             <LetrasCar position={[0,1,-2.1]} scale={[0.08,0.08,0.08]}/>
             <Cube/>
             <Pizarras position={[0,0,-4]} scale={[0.08,0.08,0.08]}/>
-            <BarrasLen  rotation={[0,17.2,0]}   position={[3,.5,2]}  scale={[0.08,0.08,0.08]}/> 
-            <BarrasLenFrame  rotation={[0,17.2,0]}   position={[-3.5,.5,2]}  scale={[0.08,0.08,0.08]}/> 
             <Carteles  position={[0,0,-4]} scale={[0.08,0.08,0.08]}/>
+            <CarLen position={[3.4,0.1,2]}  scale={[.2,.2,.2]}/>
+            <CarFrame position={[-3.4,0.1,2]}  scale={[.2,.2,.2]}/>
             <Car thirdPerson={thirdPerson}/>
+
 
             {/*Objetos Mariana*/}
             <MarianaLetras position={[10,0,-2]} scale={[1,1,1]}/>
             <PizarrasMa position={[10,0,-4]} scale={[0.08,0.08,0.08]}/>
             <CartelesMariana  position={[10,0,-4]} scale={[0.08,0.08,0.08]}/>
+            <MarFrame position={[13.5,0.1,2]}  scale={[.2,.2,.2]}/> 
+            <MarLen position={[6,0.1,2]}  scale={[.2,.2,.2]}/> 
 
-            {/*Objetos Mariana*/}
+            {/*Objetos Alejandro*/}
             <AlexLetras position={[-10.5,.2,-2]} scale={[.9,.9,.9]}/>
             <PizarrasAlex position={[-10,0,-4]} scale={[0.08,0.08,0.08]}/>
             <CartelesAlex position={[-10,0,-4]} scale={[0.08,0.08,0.08]}/>
+            <AlexFrame position={[-13,0.1,2]}  scale={[.2,.2,.2]}/> 
+            <AlexLen position={[-6,0.1,2]}  scale={[.2,.2,.2]}/> 
         </Suspense>      
         </>
 
