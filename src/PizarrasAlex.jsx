@@ -8,10 +8,10 @@ import { Html } from "@react-three/drei";
 import { Carlos } from "./Carlos";
 
 //fotos Carlos
-import img1 from "./Img/GaleriaArteMariana.png";
-import img2 from "./Img/juegoMariana.png";
-import img3 from "./Img/listaTareasMariana.png";
-import img4 from "./Img/gatoGame.png";
+import img1 from "./Img/alex1.png";
+import img2 from "./Img/alex2.png";
+import img3 from "./Img/alex3.png";
+import img4 from "./Img/alex4.png";
 
 
 
