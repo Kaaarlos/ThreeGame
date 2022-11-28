@@ -19,7 +19,7 @@ export function CartelesAlex(props) {
         >
         <Html scale={7} transform position={[0, 0, 0.05]} >
           <div className="annotation-Alex">
-              Art Gallery
+              3D WEB
           </div>
         </Html>
         </mesh>
@@ -32,7 +32,7 @@ export function CartelesAlex(props) {
       >
           <Html scale={7} transform position={[0, 0, 0.05]} >
             <div className="annotation-Alex">
-            Tic Tac Toe
+              GATO GAME
             </div>
         </Html>
       </mesh>
@@ -45,7 +45,7 @@ export function CartelesAlex(props) {
         >
         <Html scale={7} transform position={[0, 0, 0.05]} >
           <div className="annotation-Alex">
-            To Do List
+            CALCULATOR
           </div>
         </Html>
     </mesh>
