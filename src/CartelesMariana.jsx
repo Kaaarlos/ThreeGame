@@ -19,7 +19,7 @@ export function CartelesMariana(props) {
         >
         <Html scale={7} transform position={[0, 0, 0.05]} >
           <div className="annotation-Mariana">
-              Remedios Varo: Art Gallery website
+              Art Gallery Website
           </div>
         </Html>
         </mesh>
@@ -32,7 +32,7 @@ export function CartelesMariana(props) {
       >
           <Html scale={7} transform position={[0, 0, 0.05]} >
             <div className="annotation-Mariana">
-            Tic Tac Toe Classic Game
+            Tic Tac Toe
             </div>
         </Html>
       </mesh>
