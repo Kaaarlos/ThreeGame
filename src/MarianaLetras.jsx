@@ -1,3 +1,6 @@
+/*
+funcion para las letras, usamos los modelos 3d creados para las letras 
+*/
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useBox } from "@react-three/cannon";
